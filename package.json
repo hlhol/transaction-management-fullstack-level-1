@@ -2,11 +2,25 @@
   "name": "account-management-fullstack-level-1",
   "version": "1.0.0",
   "scripts": {
-      "build": "go build -o backend ./main.go",
-    "start": "./backend",
+  "name": "account-management-fullstack-level-1",
+  "version": "1.0.0",
+  "scripts": {
+    "build:backend": "cd backend && go build -o ../backend_bin",
+    "build:frontend": "cd frontend && npm install && next build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "start:backend": "./backend_bin &",
+    "start:frontend": "cd frontend && next start -p 3000",
+    "start": "npm run start:backend && npm run start:frontend",
     "test": "cypress run"
   },
+  "dependencies": {
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
   "devDependencies": {
-    "cypress": "^12.17.4"
+    "cypress": "^12.17.4",
+    "typescript": "^5.0.4"
   }
+}
 }

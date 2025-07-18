@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
         source: '/accounts/:path*',
         destination: 'http://localhost:8080/accounts/:path*',
       },
+       {
+        source: '/ping',
+        destination: 'http://localhost:8080/ping',
+      },
     ];
   },
 };
