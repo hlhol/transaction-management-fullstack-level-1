@@ -2,9 +2,6 @@
   "name": "account-management-fullstack-level-1",
   "version": "1.0.0",
   "scripts": {
-  "name": "account-management-fullstack-level-1",
-  "version": "1.0.0",
-  "scripts": {
     "build:backend": "cd backend && go build -o ../backend_bin",
     "build:frontend": "cd frontend && npm install && next build",
     "build": "npm run build:backend && npm run build:frontend",
@@ -22,5 +19,4 @@
     "cypress": "^12.17.4",
     "typescript": "^5.0.4"
   }
-}
 }
